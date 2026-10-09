@@ -1,0 +1,210 @@
+
+/* Yleiset asetukset */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fb;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Sivun yläosa */
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid #8baddc;
+}
+
+header h1 {
+    color: #0079c2;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Sivujen sisältö */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    flex: 1;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #0079c2;
+    margin-top: 0;
+}
+
+h3 {
+    color: #5079b2;
+}
+
+/* Todo-lista */
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background-color: #f5f8fb;
+    border: 1px solid #d5e1ef;
+    border-radius: 8px;
+}
+
+.todo-item input {
+    width: 18px;
+    height: 18px;
+    accent-color: #0079c2;
+}
+
+.todo-item label {
+    cursor: pointer;
+}
+
+/* Päiväkalenterin laatikot */
+
+.aikalaatikko {
+    padding: 18px;
+    margin-bottom: 15px;
+    background-color: #f5f8fb;
+    border-left: 5px solid #0079c2;
+    border-radius: 8px;
+}
+
+.aikalaatikko h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #0079c2;
+}
+
+.aikalaatikko p {
+    margin-bottom: 0;
+}
+
+/* Ryhmäytymisen ja ryhmätyöskentelyn laatikot */
+
+.kurssi,
+.vinkki,
+.opiskelija {
+    padding: 18px;
+    margin-bottom: 15px;
+    background-color: #f5f8fb;
+    border: 1px solid #d5e1ef;
+    border-radius: 8px;
+}
+
+.kurssi h3,
+.vinkki h3,
+.opiskelija h3 {
+    margin-top: 0;
+}
+
+.opiskelija a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #0079c2;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.opiskelija a:hover {
+    background-color: #005b91;
+}
+
+/* Navigaatio */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 22px 15px;
+    background-color: #ffffff;
+    border-top: 2px solid #8baddc;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #0079c2;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #8baddc;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background-color: #0079c2;
+    color: #ffffff;
+}
+
+/* Sivun alaosa */
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #e8eff8;
+    color: #000000;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobiilinäytöt */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
